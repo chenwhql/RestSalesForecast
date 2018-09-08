@@ -1,0 +1,6 @@
+visual/.idea
+visual/.settings
+visual/out
+visual/*.iml
+analysis/data/*.rar
+analysis/result
