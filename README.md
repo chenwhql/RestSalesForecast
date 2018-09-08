@@ -35,10 +35,10 @@ This prototype demonstrates data analysis and forecasting results through a webs
 
 #### Software Development Environment
 
---Java JDK1.8.0_144
---apache-tomcat-8.5.6
---SQL Server 2008 R2
---IntelliJ IDEA
+- Java JDK1.8.0_144  
+- apache-tomcat-8.5.6  
+- SQL Server 2008 R2  
+- IntelliJ IDEA  
 
 #### Code Run Description
 
@@ -51,10 +51,12 @@ This prototype demonstrates data analysis and forecasting results through a webs
 ## 2.3 Data Analysis Forecast Code Description
 
 #### Programming language and operating environment
---Python
+
+- Python
 
 #### Catalog Description
---data directory to store raw data
+
+- data directory to store raw data
 - Generate result directory to store forecast results
 
 ## Code Run Description
@@ -67,4 +69,4 @@ Sudo pip install scikit-learn
 Python proc.py
 
 - Clustering and regression algorithms call sklearn.
---spark version uses mllib
+- spark version uses mllib
