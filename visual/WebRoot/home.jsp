@@ -6,23 +6,23 @@
 <head>
     <%--<!--<base href="<%=basePath%>">-->--%>
     <meta charset="UTF-8">
-    <title>food-sale-analysis</title>
+    <title>Sales Analysis and Forecasting</title>
     <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
 
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="shortcut icon" href="img/search.ico">
 
     <!-- Loading Flat UI -->
-    <link href="flatui/css/flat-ui.css" rel="stylesheet">
+    <link href="css/flat-ui.min.css" rel="stylesheet">
 
-    <link href="select2/css/select2.min.css" rel="stylesheet" />
-    <script src="select2/js/select2.min.js"></script>
+    <link href="css/select2.min.css" rel="stylesheet" />
+    <script src="js/select2.min.js"></script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
-    <script src="flatui/js/vendor/html5shiv.js"></script>
-    <script src="flatui/js/vendor/respond.min.js"></script>
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
 
 
@@ -126,10 +126,10 @@
     <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
     <script src="js/jquery-2.1.1.js"></script>
     <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-    <script src="flatui/js/vendor/jquery.min.js"></script>
-    <script src="flatui/js/flat-ui.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/flat-ui.min.js"></script>
     <script type="text/javascript">
         $("select").select2({dropdownCssClass: 'dropdown-inverse'});
     </script>

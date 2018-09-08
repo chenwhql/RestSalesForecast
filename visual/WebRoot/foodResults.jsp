@@ -10,21 +10,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--你自己的样式文件 -->
     <link rel="shortcut icon" href="img/search.ico">
     <link href="css/search.css" rel="stylesheet" type="text/css">
 
     <!-- Loading Flat UI -->
-    <link href="flatui/css/flat-ui.css" rel="stylesheet">
+    <link href="css/flat-ui.min.css" rel="stylesheet">
 
-    <link href="select2/css/select2.min.css" rel="stylesheet" />
-    <script src="select2/js/select2.min.js"></script>
+    <link href="css/select2.min.css" rel="stylesheet" />
+    <script src="js/select2.min.js"></script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
-    <script src="flatui/js/vendor/html5shiv.js"></script>
-    <script src="flatui/js/vendor/respond.min.js"></script>
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
      	function isEmpty()
@@ -153,8 +153,8 @@
     <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="flatui/js/vendor/jquery.min.js"></script>
-    <script src="flatui/js/flat-ui.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/flat-ui.min.js"></script>
     <script type="text/javascript">
         $("select").select2({dropdownCssClass: 'dropdown-inverse'});
     </script>

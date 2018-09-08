@@ -10,21 +10,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--你自己的样式文件 -->
     <link rel="shortcut icon" href="img/coffee.ico">
     <link href="css/info.css" rel="stylesheet" type="text/css">
 
     <!-- Loading Flat UI -->
-    <link href="flatui/css/flat-ui.css" rel="stylesheet">
+    <link href="css/flat-ui.min.css" rel="stylesheet">
 
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/highcharts.js"></script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
-    <script src="flatui/js/vendor/html5shiv.js"></script>
-    <script src="flatui/js/vendor/respond.min.js"></script>
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -44,9 +44,9 @@
                 </div>
                 <div class="panel-primary">
                     <ul class="nav nav-pills" role="tablist">
-                        <li role="presentation"><a href="hotelInfo.do?hotelId=${hotel.hotelId}">Restaurant name<span class="badge">${hotel.hotelName}</span></a></li>
-                        <li role="presentation"><a href="#">Category<span class="badge">${food.cateName}</span></a></li>
-                        <li role="presentation"><a href="#">Price<span class="badge">${food.unitMoney}</span></a></li>
+                        <li role="presentation"><a href="hotelInfo.do?hotelId=${hotel.hotelId}">Restaurant name&nbsp;&nbsp;<span class="label label-default">${hotel.hotelName}</span></a></li>
+                        <li role="presentation"><a href="#">Category&nbsp;&nbsp;<span class="label label-default">${food.cateName}</span></a></li>
+                        <li role="presentation"><a href="#">Price&nbsp;&nbsp;<span class="label label-default">${food.unitMoney}</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                      success:  function(data){
                          $('#container').highcharts({
                              title: {
-                                 text: '历史销量与预测图',
+                                 text: 'Historical Sales and Forecast',
                                  x: -20 //center
                              },
                              chart: {
@@ -86,7 +86,7 @@
                              },
                              yAxis: {
                              	  title: {
-                                       text: '销量(份)'
+                                       text: 'Sales (Dish)'
                                    },
                                    plotLines: [{
                                        value: 0,
@@ -95,7 +95,7 @@
                                    }]
                              },
                              tooltip: {
-                             	 valueSuffix: '份'
+                             	 valueSuffix: 'Dish'
                              },
                              legend: {
                              	 layout: 'vertical',
@@ -140,7 +140,7 @@
                     		series[i] = s;
                     	}
                          var title = {
-                                 text: '相似菜品对比图',
+                                 text: 'Similar Food Comparison Chart',
                                  x: -20 //center
                              };
 //                             subtitle: {
@@ -156,7 +156,7 @@
                              };
                          var yAxis = {
                                  title: {
-                                     text: '销量 (份)'
+                                     text: 'Sales (Dish)'
                                  },
                                  plotLines: [{
                                      value: 0,
@@ -165,7 +165,7 @@
                                  }]
                              };
                          var tooltip = {
-                                 valueSuffix: '份'
+                                 valueSuffix: 'Dish'
                              };
                          var legend = {
                                  layout: 'vertical',
@@ -231,10 +231,10 @@
     <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
     <!--<script src="js/jquery-2.1.1.js"></script>-->
     <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!--<script src="flatui/js/vendor/jquery.min.js"></script>-->
-    <script src="flatui/js/flat-ui.min.js"></script>
+    <script src="js/flat-ui.min.js"></script>
     <script type="text/javascript">
         $(function(){
             //$('table tr:not(:first)').remove();
