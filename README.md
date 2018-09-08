@@ -1,47 +1,70 @@
 # RestSalesForecast
+
 Restaurant sales analysis and forecast
 
+## 1. Theme background
 
-## food-sales-analysis-visualization
+In this competition, I chose the 12th theme in 17 Global Goals, responsible consumption and production.
 
-本工程是展示数据分析与预测结果的可视化平台，是一个简易的网站。
+Nowadays, the development of science and technology is very rapid. In recent years, the application of artificial intelligence technology in social life has become more and more extensive. Artificial intelligence innovation will be at the heart of achieving the United Nations Sustainable Development Goals (SDGs) and will help solve the enormous challenges facing humanity.
 
-## Software Development Environment
---Java JDK1.8.0_101  
---apache-tomcat-8.5.6  
---SQL Server 2008 R2  
---MyEclipse 2014  
---springMVC  
---hibernate
+For example, machine learning and reasoning can extend health care to remote areas through automated diagnosis and effective use of limited medical expertise and transportation resources (SDG3), which will also be key to curbing urban environmental greenhouse gas emissions and supporting smart city development. Resources (Sustainable Development Goals 11 and 13), and the Global Partnership (Sustainable Development Goal 17) will provide important support for us to achieve all of these goals.
 
-## 代码运行说明  
-1. 请安装SQLServer2008R2，将数据库还原，由于数据库备份文件较大，所以请到百度云盘下载  
-链接：http://pan.baidu.com/s/1pKQmmcN 密码：jegs  
-2. 请安装相应的JDK、部署tomcat，安装MyEclipse，配置工程运行，注意修改数据库配置文件中的用户名与密码  
-3. 或者直接解压目录下的food-sales-analysis.zip文件，放到tomcat运行目录下，启动tomcat即可访问网站，注意也需要修改数据库配置文件  
+For the 12th Sustainable Development Goals, the focus is on ensuring sustainable consumption and production patterns. In this area, artificial intelligence is currently producing optimal consumption and production levels through vertical green farms, eliminating waste and greatly increasing production and resource efficiency.
 
-## 代码编写说明  
-* src/com/thuss/fsa 均为团队成员自己编写  
-* WebRoot下全部JSP页面也均为团队成员自己编写
-* bootstrap,flatui,select2，HighCharts等为引用的插件
+The prototype of this project is to realize the short-term consumption forecast by analyzing and modeling the data accumulated in the restaurant operation process, thus helping the restaurant to properly stock up and reduce the waste of inventory.
 
-## food-sales-data-analysis  
-本目录下是对数据进行分析和预测的代码实现  
-## 编程语言及运行环境  
---Python  
-## 目录说明  
---data2目录存放原始数据（数据较大，已压缩，请先解压）  
---result目录存放预测结果（数据较大，已压缩，请先解压）  
+This fits into the following two sub-goals:
+12.3 - Reduce global food waste per capita
+12.5 - Significantly reduce waste production
 
-## 代码运行说明
-sudo pip install numpy  
-sudo sudo apt-get install python-matplotlib ipython ipython-notebook  
-sudo apt-get install python-pandas python-sympy python-nose  
-sudo pip install scipy  
-sudo pip install scikit-learn 
+Through sales analysis and forecasting, on the one hand, the restaurant can more reasonably sell the dishes that guests like, reduce unnecessary waste, and on the other hand, optimize the supply of food and production from the source.
 
-python proc.py  
---聚类和回归算法调用了sklearn.  
---spark版本使用了mllib
+## 2. Project Prototype Description
+
+### 2.1 Directory Structure Description
+
+- analysis: implementation code for data analysis and prediction
+- visual: data visualization code
+- demo: Sample temporary webpage (preview before environment configuration)
+- war: war package for publishing websites
+
+### 2.2 Website Operating Environment Description
+
+This prototype demonstrates data analysis and forecasting results through a website.
+
+#### Software Development Environment
+
+--Java JDK1.8.0_144
+--apache-tomcat-8.5.6
+--SQL Server 2008 R2
+--IntelliJ IDEA
+
+#### Code Run Description
+
+1. Please install SQLServer2008R2, restore the database, because the database backup file is large, so please go to Baidu cloud disk to download
+  Link: https://pan.baidu.com/s/1V70U7rXemMcrF-5zvKG4Ag Password: j9tc
+2. Please install the corresponding JDK, deploy tomcat, install IDEA, configure the project to run, pay attention to modify the user name and password in the database configuration file.
+3. Or directly put the rest-sales-analysis.war in the war directory to the webapps directory of tomcat. Start tomcat and access the website through http://localhost:8080/rest-sales-analysis. Note that you also need to modify the database. Configuration file
 
 
+## 2.3 Data Analysis Forecast Code Description
+
+#### Programming language and operating environment
+--Python
+
+#### Catalog Description
+--data directory to store raw data
+- Generate result directory to store forecast results
+
+## Code Run Description
+Sudo pip install numpy
+Sudo sudo apt-get install python-matplotlib ipython ipython-notebook
+Sudo apt-get install python-pandas python-sympy python-nose
+Sudo pip install scipy
+Sudo pip install scikit-learn
+
+Python proc.py
+
+- Clustering and regression algorithms call sklearn.
+--spark version uses mllib
