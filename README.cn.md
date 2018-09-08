@@ -35,10 +35,10 @@ Restaurant sales analysis and forecast
 
 #### 软件开发环境
 
---Java JDK1.8.0_144
---apache-tomcat-8.5.6  
---SQL Server 2008 R2  
---IntelliJ IDEA  
+- Java JDK1.8.0_144
+- apache-tomcat-8.5.6  
+- SQL Server 2008 R2  
+- IntelliJ IDEA  
 
 #### 代码运行说明  
 
@@ -51,11 +51,13 @@ Restaurant sales analysis and forecast
 ## 2.3 数据分析预测代码说明
 
 #### 编程语言及运行环境  
---Python  
+
+- Python  
 
 #### 目录说明  
---data目录存放原始数据
---生成result目录存放预测结果
+
+- data目录存放原始数据
+- 生成result目录存放预测结果
 
 ## 代码运行说明
 sudo pip install numpy  
@@ -66,7 +68,7 @@ sudo pip install scikit-learn
 
 python proc.py  
 
---聚类和回归算法调用了sklearn.  
---spark版本使用了mllib
+- 聚类和回归算法调用了sklearn.  
+- spark版本使用了mllib
 
 
