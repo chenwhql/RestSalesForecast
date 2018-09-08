@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+    <!-- 添加注解驱动 -->  
+    <mvc:annotation-driven/>
+    
+	<task:annotation-driven/> 
+	
+	<context:component-scan base-package="com.thuss.fsa" use-default-filters="false">
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+	
+	<!-- 允许对静态资源文件的访问 -->   
+    <mvc:default-servlet-handler /> 
+    <!--<mvc:resources mapping="/skin/**" location="/skin/" />  -->
+    
+   	<aop:aspectj-autoproxy proxy-target-class="true" />
+   	
+   	<mvc:view-controller path="/500" view-name="500"/>
+   	<mvc:view-controller path="/404" view-name="404"/>
+</beans>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/aop" xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">  
+  <context:component-scan base-package="com.thuss.fsa" use-default-filters="true"> 
+    <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/> 
+  </context:component-scan>  
+  <aop:aspectj-autoproxy proxy-target-class="true"/>  
+  <!-- 定义跳转的文件的前后缀 -->  
+  <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
+    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>  
+    <property name="prefix" value="/"/>
+    <property name="suffix" value=".jsp"/> 
+  </bean>  
+  <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 annotation默认的办法映射适配器 -->  
+  <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>  
+  <bean id="handlerAdapter" class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>  
+  <!-- 上传文件 -->  
+  <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"> 
+    <!-- set the max upload size100MB -->  
+    <property name="maxUploadSize"> 
+      <value>104857600</value> 
+    </property>  
+    <property name="maxInMemorySize"> 
+      <value>4096</value> 
+    </property> 
+  </bean>  
+  <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"> 
+    <property name="basename" value="messages"/>  
+    <property name="useCodeAsDefaultMessage" value="true"/> 
+  </bean>  
+  <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver"/>  
+  <!-- 避免IE在ajax请求时，返回json出现下载 -->  
+  <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"> 
+    <property name="supportedMediaTypes"> 
+      <list> 
+        <value>text/html;charset=UTF-8</value> 
+      </list> 
+    </property> 
+  </bean>  
+</beans>
