@@ -48,7 +48,7 @@ Restaurant sales analysis and forecast
 3. 或者直接将war目录下的rest-sales-analysis.war放到tomcat的webapps目录下，启动tomcat即可通过http://localhost:8080/rest-sales-analysis访问网站，注意也需要修改数据库配置文件  
 
 
-## 2.3 数据分析预测代码说明
+### 2.3 数据分析预测代码说明
 
 #### 编程语言及运行环境  
 

@@ -48,7 +48,7 @@ This prototype demonstrates data analysis and forecasting results through a webs
 3. Or directly put the rest-sales-analysis.war in the war directory to the webapps directory of tomcat. Start tomcat and access the website through http://localhost:8080/rest-sales-analysis. Note that you also need to modify the database. Configuration file
 
 
-## 2.3 Data Analysis Forecast Code Description
+### 2.3 Data Analysis Forecast Code Description
 
 #### Programming language and operating environment
 
