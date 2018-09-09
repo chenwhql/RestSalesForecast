@@ -14,9 +14,9 @@ For the 12th Sustainable Development Goals, the focus is on ensuring sustainable
 
 The prototype of this project is to realize the short-term consumption forecast by analyzing and modeling the data accumulated in the restaurant operation process, thus helping the restaurant to properly stock up and reduce the waste of inventory.
 
-This fits into the following two sub-goals:
-12.3 - Reduce global food waste per capita
-12.5 - Significantly reduce waste production
+This fits into the following two sub-goals:  
+12.3 - Reduce global food waste per capita  
+12.5 - Significantly reduce waste production  
 
 Through sales analysis and forecasting, on the one hand, the restaurant can more reasonably sell the dishes that guests like, reduce unnecessary waste, and on the other hand, optimize the supply of food and production from the source.
 
@@ -26,7 +26,7 @@ Through sales analysis and forecasting, on the one hand, the restaurant can more
 
 - analysis: implementation code for data analysis and prediction
 - visual: data visualization code
-- demo: Sample temporary webpage (preview before environment configuration)
+- screenshot: Screenshot of web sample (preview before environment configuration)
 - war: war package for publishing websites
 
 ### 2.2 Website Operating Environment Description
