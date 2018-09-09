@@ -88,14 +88,14 @@ The story of beer and diapers indicates that there is a certain association betw
 
 Here, the scope and function description of the key functions in the project.
 
-(1) Star Restaurant: Top 10 restaurants with all restaurant turnover on the platform in the past week
-(2) Star dishes: the top 10 dishes in all food sales on the platform in the past week
-(3) Similar restaurants: select the characteristics of cuisine, format, number of tables, number of seats, number of dishes, etc., give each feature a weight, and find the cosine similarity of the two restaurants. When the similarity is greater than 0.8, two The restaurants are similar, take the most similar restaurants for comparison
-(4) Hot-selling dishes: the top 10 dishes sold in a restaurant in the past month
-(5) Unsalable dishes: 10 dishes sold in a restaurant in the past month
-(6) Similar dishes: dishes with the same name or similar names are treated as similar dishes.
-(7) Recommended pricing: obtain the top 10 dishes of the same type of food, use the sales volume as the weight, and perform the weighted average
-(8) Recommended match: Apriori algorithm digs out the order information from the order of the dish
+(1) Star Restaurant: Top 10 restaurants with all restaurant turnover on the platform in the past week  
+(2) Star dishes: the top 10 dishes in all food sales on the platform in the past week  
+(3) Similar restaurants: select the characteristics of cuisine, format, number of tables, number of seats, number of dishes, etc., give each feature a weight, and find the cosine similarity of the two restaurants. When the similarity is greater than 0.8, two The restaurants are similar, take the most similar restaurants for comparison  
+(4) Hot-selling dishes: the top 10 dishes sold in a restaurant in the past month  
+(5) Unsalable dishes: 10 dishes sold in a restaurant in the past month  
+(6) Similar dishes: dishes with the same name or similar names are treated as similar dishes.  
+(7) Recommended pricing: obtain the top 10 dishes of the same type of food, use the sales volume as the weight, and perform the weighted average  
+(8) Recommended match: Apriori algorithm digs out the order information from the order of the dish  
 
 
 ### 3.2 Page display

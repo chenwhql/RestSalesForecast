@@ -98,7 +98,7 @@
             <div class="col-lg-6">
                 <div class="panel panel-info">
                     <!-- Default panel contents -->
-                    <div class="panel-heading">Hot Dishes</div>
+                    <div class="panel-heading">Star Dishes</div>
 
                     <!-- Table -->
                     <table class="table table-striped table-hover" id='table2'>

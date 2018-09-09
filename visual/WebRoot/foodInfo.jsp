@@ -140,7 +140,7 @@
                     		series[i] = s;
                     	}
                          var title = {
-                                 text: 'Similar Food Comparison Chart',
+                                 text: 'Similar Dishes Comparison Chart',
                                  x: -20 //center
                              };
 //                             subtitle: {
@@ -202,7 +202,7 @@
             <div class="col-lg-12">
                 <div class="panel panel-success">
                     <!-- Default panel contents -->
-                    <div class="panel-heading">Recommended dishes</div>
+                    <div class="panel-heading">Recommended match</div>
 
                     <!-- Table -->
                     <table class="table table-striped table-hover" id="table1">
