@@ -66,7 +66,7 @@
                      success:  function(data){
                          $('#container').highcharts({
                              title: {
-                                 text: 'Historical Sales and Forecast',
+                                 text: 'Historical Sales and Forecast Chart',
                                  x: -20 //center
                              },
                              chart: {

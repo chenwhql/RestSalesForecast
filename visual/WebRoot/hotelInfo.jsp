@@ -69,7 +69,7 @@
                          success:  function(data){
                              $('#container').highcharts({
                                  title: {
-                                     text: 'Historical Turnover and Forecast Map',
+                                     text: 'Historical Turnover and Forecast Chart',
                                      x: -20 //center
                                  },
                                  chart: {
